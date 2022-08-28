@@ -8,3 +8,5 @@ Ceci est le texte de base qui a été commit et push depuis le pc local.
 Voici la modification effectuée par un autre développeur, qui a décidé de push son code dans la branche commune
 
 - stash
+
+Voici les modifications qui ne figurent ni dans le staging ni dans le commit
