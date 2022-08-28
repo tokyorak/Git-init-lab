@@ -1,0 +1,10 @@
+On va essayer de mofifier ce fichier depuis github
+Et ensuite appliquer des modifications qu'on a stocké dans le stash
+
+Ceci est le texte de base qui a été commit et push depuis le pc local.
+
+- github
+
+
+
+- stash
