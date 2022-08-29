@@ -75,3 +75,41 @@ git remote add <alias-repo-distant> <url-repo-distant>
 ```
 
 Git possède un mécanisme d'enregistrement supplémentaire à part le commit, il s'agit du `stash`. C'est un espace de stockage temporaire pour les changements qui ne sont pas prêts à être envoyés dans un commit.
+
+Un cas d'utilisation possible est 
+- d'utiliser le stash pour sauvegarder les modifications qui n'ont pas encore été mis dans un commit
+- récupérer les modifications effectuées par les autres contributeurs
+- une fois les conflits réglés et un nouvel instantanné créé, ajouter les dernières modifications pour lesquelles aucun instantanné n'a été créé.
+
+Pour envoyer les modification non-indexés dans le stash il suffit de faire la commande (l'intitulé du stash est optionnel)
+
+```powershell
+git stash save "texte-explicatif"
+```
+
+Pour retrouver la liste des différents stash
+
+```powershell
+git stash list
+```
+
+Pour appliquer un stash dans l'espace de travail
+
+```powershell
+git stash apply
+#ou 
+git stash pop <nom-du-stash>
+```
+
+Pour supprimer un stash en particulier de la liste de stash
+
+```powershell
+git stash drop <nom-du-stash>
+```
+
+Il est possible de supprimer tous les stashes en une commande
+
+```powershell
+git stash clear
+```
+
